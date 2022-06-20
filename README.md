@@ -8,3 +8,9 @@ En este repositorio se encuentra el código asociado al Trabajo de Fin de Master
 -classification.ipynb : Aplicación de técnicas de ML al conjunto de datos
 
 -imbalancedtreeauc.ipynb : Aplicación del algoritmo ImbalancedTreeAUC de https://github.com/ElsevierSoftwareX/SOFTX-D-21-00034
+
+-schema.graphql: Esquema en GraphQL con las entidades a consutlar
+
+-mapping.ts: Mapeo de la información del Smart Contract 
+
+-subrgaph.yaml: Manifiesto del subgrafo
