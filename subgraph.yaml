@@ -1,0 +1,26 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: rinkeby
+    source:
+      address: "0x6D79b89Ddf9BCDc76ce74eb2f302eecb15bc5801"
+      abi: Contract
+      startBlock: 10030046  
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Student
+        - Activity
+        - UserOrganization
+      abis:
+        - name: Contract
+          file: ./abis/Contract.json
+      eventHandlers:
+        - event: EnrollmentIssued(string,string)
+          handler: handleEnrollmentIssued
+      file: ./src/mapping.ts
